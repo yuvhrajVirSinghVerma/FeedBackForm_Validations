@@ -88,23 +88,7 @@ function Validate(values,radiochecked){
   }
   
 
-// ========================Making useffect to skip its execution when page reloads==================
-  // let didmount=useRef(false)
-  // useEffect(()=>{
-  //   if(didmount.current)Store()
-  //   else didmount.current=true
-  // },[errors])
 
-  // function Store(){
-  
-  //   if(Object.keys(errors).length==0){
-  //     UpdateDataState()
-  //   } }
-
-  
-// useEffect(()=>{
-//   getRadioData().then((res)=>)
-// })
 
  // ========================Updating the Data state ========================
 function UpdateDataState(){
@@ -115,16 +99,6 @@ function UpdateDataState(){
     setsuccess(false)
   }, 1000);
 
-// after form submission empty all input values
-setallValues({text:'',phone:'',email:'',vote:''})
-// let inputs=[...document.querySelectorAll('input')]
-//   inputs.map((i)=>{
-//     if(i.checked){
-//       i.checked=false
-//     }
-//     i.value=''
-           
-//   })
 }
 //==================storing data in localstorage==================
 useEffect(()=>{
